@@ -3,13 +3,14 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/tocobo/', 
+  // base 경로를 기본값인 '/'로 수정했습니다.
+  base: '/', 
+  
   build: {
     outDir: 'docs',
   },
   plugins: [react()],
     css: {
-    devSourcemap: true  // ✅ 요게 핵심!
+    devSourcemap: true 
   }
-
 })
